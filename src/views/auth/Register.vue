@@ -26,5 +26,5 @@ const register = async () => {
 register();
 </script>
 <template>
-    <h1>Register</h1>
+    <h1 class="text-slate-200">Register</h1>
 </template>
