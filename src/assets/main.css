@@ -1,2 +1,12 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. Import Flowbite default theme variable tokens */
+@import "flowbite/src/themes/default";
+
+/* 2. Point Tailwind to Flowbite JS files to compile utility classes */
+@source "../../node_modules/flowbite/**/*.js";
+
+/* 3. Register the Flowbite Tailwind Plugin */
+@plugin "flowbite/plugin";
